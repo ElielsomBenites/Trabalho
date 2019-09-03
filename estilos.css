@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    background-color: darkolivegreen;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    grid-template-rows: auto auto auto;
+   
+      
+}
+
+header {
+    background-color: darkolivegreen;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    
+}
+
+
+header img#logo {
+    width: 150px;
+    height: 100px;
+    float: left;
+    margin: 0px;
+   
+}
+header table {
+    margin-right: auto;
+    margin-left: auto;
+}
+article {
+    text-align: center;
+    color: #333;
+}
+
+article table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+article table th, td {
+    padding: 10px;
+}
+article table tr {
+    border-bottom: solid 3px;
+}
+article table tbody tr:hover {
+    background: gray;
+}
+
+nav {
+    text-decoration: none;
+    text-align: right;
+    grid-column: 3;
+    grid-row: 2;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    
+}
+
+nav ul li a {
+    padding: 10px;
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 3px solid;
+}
+
+nav ul li a:hover {
+    color: #6d6d6d;
+
+    border-bottom: 3px solid;
+
+}
+
+aside {
+   
+    color: #333;
+    text-decoration: none;
+    grid-column: 1;
+    grid-row: 2;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+}
+
+footer p {
+    text-align: center;
+    font-style: italic;
+    color: black;
+    clear: both;
+}
+
+
+
+
+header img#ter {
+    display: none;
+}
+@media screen and (max-width: 480px) {
+    header img#principal {
+        display: none;   /* oculta a imagem */
+      }
+    header img#ter {
+        display: inline;
+    }
+    footer img#mapa {
+        display: none;
+    }
+}
